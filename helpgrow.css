@@ -356,6 +356,7 @@ p {
     border-radius: 20px;
     box-shadow: var(--shadow-soft);
     transition: all 0.3s ease;
+    position: relative;
 }
 
 .need-card:hover {
@@ -363,23 +364,27 @@ p {
     box-shadow: var(--shadow-medium);
 }
 
-.need-header {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+.need-card h3 {
+    margin-top: 0;
     margin-bottom: 1.5rem;
+    padding-right: 4rem;
 }
 
-.need-icon {
-    font-size: 2.5rem;
+.need-image {
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    height: 5rem;
+    width: 5rem;
+    object-fit: contain;
 }
 
-.need-type {
-    font-size: 0.9rem;
-    color: var(--color-terracotta);
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+.need-emoji {
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    font-size: 5rem;
+    line-height: 1;
 }
 
 /* Team Section */
